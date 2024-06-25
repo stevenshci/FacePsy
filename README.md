@@ -1,3 +1,3 @@
 # FacePsy
 
-## Comming soon! End of June!
+## Coming soon! End of June!
