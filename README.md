@@ -1,3 +1,3 @@
 # FacePsy
 
-## Coming soon! End of June!
+## Coming soon! FacePsy repository will be opened at the upcoming MobileHCI conference.
