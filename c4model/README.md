@@ -1,0 +1,1 @@
+docker run -it --rm -p 8080:8080 -v /Users/rahul/Library/CloudStorage/OneDrive-stevens.edu/GitHub/FacePsy/c4model/workspace.dsl structurizr/lite
