@@ -56,12 +56,13 @@ service cloud.firestore {
 
 ### Firestore Data
 
-- Add `/config/survey` (`db.collection("config").document("survey")`)
-  - `preLink`: https://example.com/
-  - `postLink`: https://example.com/
-- TODO: `db.collection("config").document("triggers")`
-- TODO: `db.collection("config").document("triggerDuration")`
-- TODO: `db.collection("config").document("stroopTask")`
+- Collection `config`
+  - Document `survey` (`db.collection("config").document("survey")`)
+    - `preLink`: https://example.com/
+    - `postLink`: https://example.com/
+  - **TODO**: Document `triggers` (`db.collection("config").document("triggers")`)
+  - **TODO**: Document `triggerDuration` (`db.collection("config").document("triggerDuration")`)
+  - **TODO**: Document `stroopTask` (`db.collection("config").document("stroopTask")`)
 
 ## Installation
 1. Clone the repository
