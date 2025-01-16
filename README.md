@@ -31,6 +31,29 @@ FacePsy is designed to capture real-time facial behavior primitives as users int
 5. Install CMake v3.6 via Android Studio.
 6. Download and extract [OpenCV v4.0.1 for Android](https://github.com/opencv/opencv/releases/tag/4.0.1).
 
+## Firebase Setup
+1. Open [Firebase Console](https://console.firebase.google.com/) and create a new project.
+2. Register the android app to your Firebase project.
+3. Download `google-services.json` file and copy it to `./FacePsy/app/` directory.
+4. Go back to your Firebase Project, select `Authentication`, and enable `Email/Password`.
+5. Go back to your Firebase Project, select `Cloud Firestore` and click `Create Database`.
+   - In your new Firestore database, click `Rules` tab and replace with following rule. Modify as needed.
+```
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+```
+   - Open `Data` tab and add following documents:
+     - Add `/config/survey`
+       - `preLink`: https://example.com/
+       - `postLink`: https://example.com/
+
 ## Installation
 1. Clone the repository
 2. Before importing the project into AndroidStudio there's a __little editing__ to do:
