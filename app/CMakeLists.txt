@@ -11,8 +11,12 @@ set(TARGET_NAME native-lib)
 set(CMAKE_VERBOSE_MAKEFILE on)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexceptions -std=c++11")
 
-# Path to project: REPLACE WITH YOUR PATH!
-set(PROJECT_PATH /Users/rahul/Desktop/Projects/android-face-landmarks-master)
+# TODO: Path to project: REPLACE WITH YOUR PATH!
+# Choose 1) or 2) based on your OS
+# 1) For macOS / Linux:
+set(PROJECT_PATH "/Users/username/FacePsy")
+# 2) For Windows:
+# set(PROJECT_PATH "C:/Users/username/FacePsy")
 
 # Configure import libs: MAKE SURE TO HAVE A 'cppLibs' DIRECTORY"
 set(LIB_DIR ${CMAKE_SOURCE_DIR}/src/main/cppLibs)
@@ -21,8 +25,12 @@ set(LIB_DIR ${CMAKE_SOURCE_DIR}/src/main/cppLibs)
 # ------------------------------------------------------------------
 # -- OPENCV
 # ------------------------------------------------------------------
-# Path to OpenCV: REPLACE WITH YOUR PATH!
-set(OPENCV_PATH /Users/rahul/opencv/)
+# TODO: Path to OpenCV: REPLACE WITH YOUR PATH!
+# Choose 1) or 2) based on your OS
+# 1) macOS / Linux
+set(OPENCV_PATH "/Users/username/opencv4/")
+# 2) Windows
+# set(OPENCV_PATH "C:/Users/username/opencv4/")
 
 # Make directories for Opencv
 file(MAKE_DIRECTORY ${LIB_DIR}/opencv)
