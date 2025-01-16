@@ -24,17 +24,23 @@ FacePsy is designed to capture real-time facial behavior primitives as users int
 * Reboot app on device restart, app crash, etc, and continue data collection
 
 ## Requirements
-1. Android Studio 2022
-2. NDK: 20.0.5594570
-3. Firebase
+1. Install JDK 1.8, e.g. [Amazon Corretto 8](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html)
+2. Install [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/)
+3. Install [Android Studio 2022.1](https://developer.android.com/studio/releases/past-releases/as-electric-eel-release-notes) via Jetbrains Toolbox.
+4. Install NDK v20.0.5594570 via Android Studio.
+5. Install CMake v3.6 via Android Studio.
+6. Download and extract [OpenCV v4.0.1 for Android](https://github.com/opencv/opencv/releases/tag/4.0.1).
 
 ## Installation
 1. Clone the repository
-2. Open the project in Android Studio
-3. Set the NDK path in `local.properties` file
-4. Set JDK version to 1.8 by going to Preference > Build Tools > Gradle
-5. Add Firebase to the project (Follow the instructions [here](https://firebase.google.com/docs/android/setup))
-6. Build the project
+2. Before importing the project into AndroidStudio there's a __little editing__ to do:
+   * Open the `app/CMakeLists.txt`
+   * Then, __replace__ with your path the variables **PROJECT_PATH** and **OPENCV_PATH**.
+3. Open the project in Android Studio
+4. Set the NDK path in `local.properties` file
+5. Set JDK version to 1.8 by going to Preference > Build Tools > Gradle
+6. Add Firebase to the project (Follow the instructions [here](https://firebase.google.com/docs/android/setup))
+7. Build the project
 
 ## Usage
 1. Open the app
@@ -50,13 +56,6 @@ Following parameters can be accessed by the study admin/researcher/developer:
 2. EMA link and delivery
 3. Data collection length on each trigger type
 4. Data collection frequency
-
-## Extras
-### To use Dlib with OpenCV
-1. Before importing the project into AndroidStudio there's a __little editing__ to do:
-   * Open the `app/CMakeLists.txt`
-   * Then, __replace__ with your path the variables **PROJECT_PATH** and **OPENCV_PATH**.
-2. Now the project is ready to be imported into AndroidStudio.
 
 ## Credit
 Thanks to [CottaCush/HiddenCam](https://github.com/CottaCush/HiddenCam).

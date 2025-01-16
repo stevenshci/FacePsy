@@ -10,6 +10,9 @@ buildscript {
         jcenter()
         mavenCentral()
         mavenLocal()
+        gradlePluginPortal()
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url 'https://maven.scijava.org/content/repositories/public' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:' + versions.gradlePlugin
@@ -28,6 +31,7 @@ allprojects {
         jcenter()
         mavenCentral()
         mavenLocal()
+        maven { url "https://dl.bintray.com/novoda/maven" }
     }
 }
 
