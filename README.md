@@ -60,9 +60,14 @@ service cloud.firestore {
   - Document `survey` (`db.collection("config").document("survey")`)
     - `preLink`: https://example.com/
     - `postLink`: https://example.com/
-  - **TODO**: Document `triggers` (`db.collection("config").document("triggers")`)
-  - **TODO**: Document `triggerDuration` (`db.collection("config").document("triggerDuration")`)
-  - **TODO**: Document `stroopTask` (`db.collection("config").document("stroopTask")`)
+  - Document `triggers` (`db.collection("config").document("triggers")`)
+  - Document `triggerDuration` (`db.collection("config").document("triggerDuration")`)
+    - `app`: 100
+    - `flowerGame`: 100
+    - `unlockEvent`: 100
+    - `stroopTask`: 100
+  - Document `stroopTask` (`db.collection("config").document("stroopTask")`)
+    - `rounds`: 3
 
 ## Installation
 1. Clone the repository
