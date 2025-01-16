@@ -38,7 +38,7 @@ FacePsy is designed to capture real-time facial behavior primitives as users int
 4. Go back to your Firebase Project, select `Authentication`, and enable `Email/Password`.
 5. Go back to your Firebase Project, select `Cloud Firestore` and click `Create Database`.
 
-### Firstore Rules
+### Firetore Rules
 
 Replace and modify as needed the rule with following config.
 
@@ -56,9 +56,12 @@ service cloud.firestore {
 
 ### Firestore Data
 
-- Add `/config/survey`
+- Add `/config/survey` (`db.collection("config").document("survey")`)
   - `preLink`: https://example.com/
   - `postLink`: https://example.com/
+- TODO: `db.collection("config").document("triggers")`
+- TODO: `db.collection("config").document("triggerDuration")`
+- TODO: `db.collection("config").document("stroopTask")`
 
 ## Installation
 1. Clone the repository
