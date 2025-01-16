@@ -63,10 +63,10 @@ service cloud.firestore {
   - Document `triggers` (`db.collection("config").document("triggers")`)
     - `apps`: array of map
       - [0]
-        - `packageName`: "package00"
+        - `packageName`: "flowerGame"
         - `enable`: true / false
       - [1]
-        - `packageName`: "package01"
+        - `packageName`: "stroopTask"
         - `enable`: true / false
   - Document `triggerDuration` (`db.collection("config").document("triggerDuration")`)
     - `app`: 100
