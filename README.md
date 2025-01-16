@@ -61,6 +61,13 @@ service cloud.firestore {
     - `preLink`: https://example.com/
     - `postLink`: https://example.com/
   - Document `triggers` (`db.collection("config").document("triggers")`)
+    - `apps`: array of map
+      - [0]
+        - `packageName`: "package00"
+        - `enable`: true / false
+      - [1]
+        - `packageName`: "package01"
+        - `enable`: true / false
   - Document `triggerDuration` (`db.collection("config").document("triggerDuration")`)
     - `app`: 100
     - `flowerGame`: 100
