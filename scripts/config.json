@@ -1,0 +1,229 @@
+{
+    "stroopTask": {
+        "rounds": 30
+    },
+    "survey": {
+        "postLink": "https://example.com/", 
+        "preLink": "https://example.com/"
+    },
+    "triggerDuration": {
+        "unlockEvent": 10000,
+        "stroopTask": 60000,
+        "app": 10000,
+        "flowerGame": 90000
+    },
+    "triggers": {
+        "apps": [
+            {
+                "category": "communication",
+                "enable": true,
+                "packageName": "com.google.android.apps.messaging",
+                "appName": "Messages"
+            },
+            {
+                "category": "communication",
+                "appName": "GroupMe",
+                "enable": true,
+                "packageName": "com.groupme.android"
+            },
+            {
+                "packageName": "com.snapchat.android",
+                "enable": true,
+                "appName": "Snapchat",
+                "category": "communication"
+            },
+            {
+                "packageName": "com.whatsapp",
+                "category": "communication",
+                "enable": true,
+                "appName": "WhatsApp"
+            },
+            {
+                "category": "communication",
+                "packageName": "com.Slack",
+                "appName": "Slack",
+                "enable": true
+            },
+            {
+                "appName": "weihcat",
+                "enable": true,
+                "packageName": "com.tencent.mm",
+                "category": "communication"
+            },
+            {
+                "category": "communication",
+                "packageName": "com.tencent.tim",
+                "appName": "tim",
+                "enable": true
+            },
+            {
+                "packageName": "com.taobao.taobao",
+                "enable": true,
+                "category": "communication",
+                "appName": "taobao"
+            },
+            {
+                "category": "communication",
+                "packageName": "com.telegram.messenger",
+                "enable": true,
+                "appName": "telegram"
+            },
+            {
+                "category": "communication",
+                "appName": "KakaoTalk",
+                "packageName": "com.kakao.talk",
+                "enable": true
+            },
+            {
+                "category": "social",
+                "appName": "Instagram",
+                "packageName": "com.instagram.android",
+                "enable": true
+            },
+            {
+                "category": "social",
+                "packageName": "com.facebook.katana",
+                "appName": "Facebook",
+                "enable": true
+            },
+            {
+                "category": "social",
+                "enable": true,
+                "packageName": "com.twitter.android",
+                "appName": "Twitter"
+            },
+            {
+                "enable": true,
+                "appName": "Reddit",
+                "packageName": "com.reddit.frontpage",
+                "category": "social"
+            },
+            {
+                "enable": true,
+                "packageName": "com.pinterest",
+                "category": "social",
+                "appName": "Pinterest"
+            },
+            {
+                "enable": true,
+                "packageName": "com.google.android.gm",
+                "category": "productivity",
+                "appName": "Gmail"
+            },
+            {
+                "enable": true,
+                "appName": "Outlook",
+                "category": "productivity",
+                "packageName": "com.microsoft.office.outlook"
+            },
+            {
+                "enable": true,
+                "appName": "Chrome",
+                "packageName": "com.android.chrome",
+                "category": "productivity"
+            },
+            {
+                "appName": "Canvas",
+                "packageName": "com.instructure.candroid",
+                "category": "productivity",
+                "enable": true
+            },
+            {
+                "category": "productivity",
+                "enable": true,
+                "packageName": "com.workday.workdroidapp",
+                "appName": "Workday"
+            },
+            {
+                "category": "productivity",
+                "packageName": "com.google.android.apps.docs",
+                "enable": true,
+                "appName": "Google Drive"
+            },
+            {
+                "enable": true,
+                "category": "productivity",
+                "appName": "Google Docs",
+                "packageName": "com.google.android.apps.docs.editors.docs"
+            },
+            {
+                "category": "productivity",
+                "appName": "Google Slides",
+                "enable": true,
+                "packageName": "com.google.android.apps.docs.editors.slides"
+            },
+            {
+                "packageName": "com.google.android.apps.docs.editors.sheets",
+                "category": "productivity",
+                "appName": "Google Sheets",
+                "enable": true
+            },
+            {
+                "appName": "Naver",
+                "category": "productivity",
+                "packageName": "com.nhn.android.search",
+                "enable": true
+            },
+            {
+                "appName": "Amazon Shopping",
+                "category": "productivity",
+                "enable": true,
+                "packageName": "com.amazon.mShop.android.shopping"
+            },
+            {
+                "appName": "Netflix",
+                "enable": true,
+                "packageName": "com.netflix.mediaclient",
+                "category": "entertainment"
+            },
+            {
+                "packageName": "com.google.android.youtube",
+                "category": "entertainment",
+                "enable": true,
+                "appName": "Youtube"
+            },
+            {
+                "enable": true,
+                "category": "entertainment",
+                "appName": "Spotify",
+                "packageName": "com.spotify.music"
+            },
+            {
+                "appName": "Disney+",
+                "enable": true,
+                "category": "entertainment",
+                "packageName": "com.disney.disneyplus"
+            },
+            {
+                "appName": "bilibili",
+                "enable": true,
+                "category": "entertainment",
+                "packageName": "tv.danmaku.bili"
+            },
+            {
+                "packageName": "com.google.android.apps.podcasts",
+                "enable": true,
+                "appName": "Google Podcasts",
+                "category": "entertainment"
+            },
+            {
+                "appName": "Amazon Prime Video",
+                "category": "entertainment",
+                "packageName": "com.amazon.avod.thirdpartyclient",
+                "enable": true
+            },
+            {
+                "appName": "Genshin Impact",
+                "packageName": "com.miHoYo.GenshinImpact",
+                "category": "entertainment",
+                "enable": true
+            },
+            {
+                "appName": "Google Fit",
+                "enable": true,
+                "category": "health",
+                "packageName": "com.google.android.apps.fitness"
+            }
+        ]
+    }
+}
