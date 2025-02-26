@@ -132,5 +132,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-If you have any questions or suggestions, please feel free to contact [Rahul](mailto:rahul.islam3@gmail.com).
+If you have any questions or suggestions, please feel free to contact [Prof. Sang Won Bae](mailto:sbae4@stevens.edu) or [Rahul](mailto:rahul.islam3@gmail.com).
 
